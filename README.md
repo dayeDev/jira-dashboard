@@ -64,7 +64,7 @@ QA 업무에서는 도메인마다 에픽을 만들어 이슈를 등재합니다
 
 ```bash
 # 저장소 클론
-git clone https://github.com/your-username/jira-dashboard.git
+git clone https://github.com/dayeDev/jira-dashboard.git
 cd jira-dashboard
 
 # 의존성 설치
