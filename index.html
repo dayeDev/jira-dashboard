@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jira Epic Dashboard</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f4f5f7; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+  .wrap { text-align: center; padding: 48px 24px; }
+  .badge { display: inline-block; background: #0052cc; color: white; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; letter-spacing: .5px; margin-bottom: 20px; }
+  h1 { font-size: 32px; font-weight: 800; color: #172b4d; margin-bottom: 12px; }
+  .sub { font-size: 15px; color: #5e6c84; margin-bottom: 48px; line-height: 1.6; }
+  .cards { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+  .card { background: white; border-radius: 12px; padding: 32px 28px; width: 280px; box-shadow: 0 2px 12px rgba(0,0,0,.08); text-decoration: none; color: inherit; transition: transform .15s, box-shadow .15s; border: 1.5px solid #dfe1e6; }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.12); border-color: #0052cc; }
+  .card-icon { font-size: 36px; margin-bottom: 16px; }
+  .card h2 { font-size: 17px; font-weight: 700; color: #172b4d; margin-bottom: 8px; }
+  .card p { font-size: 13px; color: #5e6c84; line-height: 1.6; }
+  .card-tag { display: inline-block; margin-top: 16px; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+  .tag-live { background: #e3fcef; color: #006644; }
+  .tag-snap { background: #deebff; color: #0747a6; }
+  footer { margin-top: 48px; font-size: 12px; color: #97a0af; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">DEMO</span>
+  <h1>Jira Epic Dashboard</h1>
+  <p class="sub">Jira 에픽의 이슈 현황을 시각화하는 QA 대시보드.<br>이슈 생성, 상태 추이, 담당자별 현황을 한눈에.</p>
+  <div class="cards">
+    <a class="card" href="demo-before.html">
+      <div class="card-icon">🖥️</div>
+      <h2>대시보드 (운영 뷰)</h2>
+      <p>QA 담당자용 작업 화면. </p>
+      <span class="card-tag tag-live">내보내기 전</span>
+    </a>
+    <a class="card" href="demo-after.html">
+      <div class="card-icon">📄</div>
+      <h2>스냅샷 (공유 뷰)</h2>
+      <p>보고용 읽기 전용 뷰. </p>
+      <span class="card-tag tag-snap">내보내기 후</span>
+    </a>
+  </div>
+  <footer>더미 데이터로 구성된 데모입니다. 실제 Jira 데이터와 무관합니다. <br> ※ 데모 데이터로 불러오기·이슈생성·내보내기는 동작하지 않습니다.</footer>
+</div>
+</body>
+</html>
